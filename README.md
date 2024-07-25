@@ -15,7 +15,23 @@ MangaVault a été conçu pour offrir aux amateurs d'animes et de mangas un outi
 
 ## Installation
 
-Un simple installeur je n'ai fait que pour Windows donc cela ne sera pas disponible pour Linux.
+1. Clonez ce dépôt sur votre machine :
+    ```bash
+    git clone https://github.com/votre-utilisateur/mangavault.git
+    cd mangavault
+    ```
+
+2. Installez les dépendances :
+    ```bash
+    npm install
+    npm install electron@^25.0.0
+    npm install @cliqz/adblocker @cliqz/adblocker-electron
+    ```
+
+3. Lancez l'application :
+    ```bash
+    electron .
+    ```
 
 ## Utilisation
 
@@ -26,9 +42,22 @@ Un simple installeur je n'ai fait que pour Windows donc cela ne sera pas disponi
 
 ## Contributions
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à l'amélioration de MangaVault, Veuillez me contacter.
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à l'amélioration de MangaVault, veuillez suivre les étapes suivantes :
 
-Discord : pralexio
+1. Forker ce dépôt.
+2. Créez une branche pour votre fonctionnalité ou correctif :
+    ```bash
+    git checkout -b ma-fonctionnalite
+    ```
+3. Faites vos modifications et commitez-les :
+    ```bash
+    git commit -am 'Ajout d'une nouvelle fonctionnalité'
+    ```
+4. Poussez vos changements :
+    ```bash
+    git push origin ma-fonctionnalite
+    ```
+5. Créez une pull request depuis GitHub.
 
 ## License
 
