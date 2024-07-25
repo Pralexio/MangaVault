@@ -23,7 +23,6 @@ MangaVault a été conçu pour offrir aux amateurs d'animes et de mangas un outi
 
 2. Installez les dépendances :
     ```bash
-    npm install
     npm install electron@^25.0.0
     npm install @cliqz/adblocker @cliqz/adblocker-electron
     ```
