@@ -1,0 +1,318 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9; /* Couleur de fond légère et neutre */
+  color: #333;
+  height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto; /* Ajout de défilement si nécessaire */
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #F6E6D1; /* Beige clair pour le fond du contenu */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 100vh;
+  box-sizing: border-box;
+}
+
+#newNoteButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff5722;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#newNoteButton:hover {
+  background-color: #e64a19;
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #F6E6D1; /* Beige clair pour le fond de la modal */
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 90%;
+  max-width: 400px; /* Limite stricte de largeur */
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour la modal */
+  box-sizing: border-box; /* Assure que padding et bordure sont inclus dans la largeur */
+  position: relative; /* Pour positionner la croix de fermeture */
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #F6E6D1; /* Beige clair pour les champs de texte */
+  color: #333;
+  box-sizing: border-box; /* Assure que padding et bordure sont inclus dans la largeur */
+}
+
+.modal-content textarea {
+  resize: none; /* Empêche le redimensionnement du champ Contenu */
+}
+
+.modal-content button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff5722; /* Orange pour les boutons */
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #e64a19; /* Couleur légèrement plus foncée au survol */
+  transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+/* Style pour le champ de numéro d'épisode/chapitre */
+.modal-content input#episodeNumber {
+  margin: 10px 0;
+}
+
+/* Style pour le groupe de boutons radio */
+.radio-group {
+  margin: 10px 0;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.radio-group input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #ff5722; /* Couleur du bouton radio */
+}
+
+.radio-group span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style pour les icônes de type de note */
+.note-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ff5722; /* Couleur des icônes */
+}
+
+.note-icon.book::before {
+  content: "\f02d"; /* Icône de livre */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.note-icon.stream::before {
+  content: "\f26c"; /* Icône de film */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+/* Style pour les boutons d'action dans les notes */
+.note .action-buttons {
+  display: none;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.note .edit-button,
+.note .delete-button {
+  background: none;
+  border: none;
+  color: #ff5722;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Affiche les boutons d'action seulement au survol */
+.note:hover .action-buttons {
+  display: flex;
+}
+
+.note .edit-button:hover,
+.note .delete-button:hover {
+  color: #e64a19; /* Couleur plus foncée au survol */
+  transform: scale(1.1); /* Agrandir légèrement au survol */
+}
+
+.note .edit-button {
+  margin-left: 0; /* Pas de marge gauche pour le premier bouton */
+}
+
+/* Style pour les boutons de suppression */
+#deleteModeButton, #deleteSelectedButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px; /* Coins arrondis pour les boutons */
+  font-size: 16px;
+}
+
+#deleteSelectedButton {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+}
+
+/* Style pour la note */
+.note {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #F6E6D1; /* Beige clair pour le fond de la note */
+  border: 1px solid #ddd;
+  color: #333;
+  cursor: pointer;
+  border-radius: 8px; /* Coins arrondis pour les notes */
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour les notes */
+}
+
+/* Style pour le bouton d'ouverture d'URL */
+.open-url-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000; /* Assure que le bouton est au-dessus des autres éléments */
+}
+
+.open-url-button:hover {
+  background-color: #e64a19;
+}
+
+/* Animation pour la modal */
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classe pour l'affichage de la modal */
+.modal.show {
+  display: block;
+  animation: modalIn 0.5s ease-out; /* Appliquer l'animation */
+}
+
+/* Style pour le modal d'édition */
+#editNoteModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#editNoteModal .modal-content {
+  margin: 10% auto;
+  max-width: 600px;
+  border: 1px solid #ddd;
+}
+
+#editNoteModal .modal-content button {
+  background-color: #4caf50; /* Couleur différente pour le bouton de sauvegarde */
+}
+
+#editNoteModal .modal-content button:hover {
+  background-color: #388e3c;
+}

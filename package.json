@@ -1,0 +1,41 @@
+{
+  "name": "mangavault",
+  "version": "0.1.0",
+  "description": "A simple application to remember which episode / scan you were (saved locally) !",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . MangaVault --platform=win32 --arch=x64 --icon=Logo.ico --electron-version=25.0.0",
+    "dist": "set USE_HARD_LINKS=true && electron-builder"
+  },
+  "author": "Pralexio",
+  "license": "ISC",
+  "dependencies": {
+    "@cliqz/adblocker": "^1.30.0",
+    "@cliqz/adblocker-electron": "^1.30.0",
+    "cross-fetch": "^4.0.0"
+  },
+  "devDependencies": {
+    "electron": "^25.9.8",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^15.5.2"
+  },
+  "build": {
+    "appId": "com.pralexio.mangavault",
+    "productName": "MangaVault",
+    "files": [
+      "**/*"
+    ],
+    "icon": "Logo.ico",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MangaVault</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="icon" type="image/x-icon" href="Logo.ico">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Archives Récentes</h2>
+    <div id="notesList"></div>
+  </div>
+  <div class="content" id="noteContent">
+    <h2>Bienvenue</h2>
+    <p>Sélectionnez une Archives pour afficher son contenu ici.</p>
+  </div>
+  
+  <button id="newNoteButton">+</button>
+  
+  <div id="newNoteModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Nouvelle Archives</h2>
+      <input type="text" id="noteTitle" placeholder="Titre">
+      <input type="text" id="episodeNumber" placeholder="Numéro d'épisode/chapitre">
+      <textarea id="noteBody" placeholder="Description"></textarea>
+      <input type="text" id="noteURL" placeholder="URL (facultatif)">
+      <div class="radio-group">
+        <label><input type="radio" name="noteType" value="anime"> Anime</label>
+        <label><input type="radio" name="noteType" value="scan"> Scan</label>
+      </div>
+      <button id="saveNoteButton">Enregistrer</button>
+    </div>
+  </div>
+  
+  <div id="editNoteModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-edit">&times;</span>
+      <h2>Modifier Archives</h2>
+      <input type="text" id="editNoteTitle" placeholder="Titre">
+      <input type="text" id="editEpisodeNumber" placeholder="Numéro d'épisode/chapitre">
+      <textarea id="editNoteBody" placeholder="Description"></textarea>
+      <input type="text" id="editNoteURL" placeholder="URL (facultatif)">
+      <div class="radio-group">
+        <label><input type="radio" id="editAnime" name="editNoteType" value="anime"> Anime</label>
+        <label><input type="radio" id="editScan" name="editNoteType" value="scan"> Scan</label>
+      </div>
+      <button id="updateNoteButton">Mettre à jour</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
