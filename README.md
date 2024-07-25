@@ -26,22 +26,9 @@ Un simple installeur je n'ai fait que pour Windows donc cela ne sera pas disponi
 
 ## Contributions
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à l'amélioration de MangaVault, veuillez suivre les étapes suivantes :
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à l'amélioration de MangaVault, Veuillez me contacter.
 
-1. Forker ce dépôt.
-2. Créez une branche pour votre fonctionnalité ou correctif :
-    ```bash
-    git checkout -b ma-fonctionnalite
-    ```
-3. Faites vos modifications et commitez-les :
-    ```bash
-    git commit -am 'Ajout d'une nouvelle fonctionnalité'
-    ```
-4. Poussez vos changements :
-    ```bash
-    git push origin ma-fonctionnalite
-    ```
-5. Créez une pull request depuis GitHub.
+Discord : pralexio
 
 ## License
 
