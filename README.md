@@ -17,7 +17,7 @@ MangaVault a été conçu pour offrir aux amateurs d'animes et de mangas un outi
 
 1. Clonez ce dépôt sur votre machine :
     ```bash
-    git clone https://github.com/votre-utilisateur/mangavault.git
+    git clone https://github.com/Pralexio/MangaVault.git
     cd mangavault
     ```
 
