@@ -16,6 +16,8 @@ MangaVault a été conçu pour offrir aux amateurs d'animes et de mangas un outi
 
 ## Installation
 
+**(Pour Windows juste besoins de l'installeur les commandes ci-dessous sont pour pouvoir installer toutes les dépendances pour éditer ou utiliser les fichiers du projet directement)**
+
 1. Clonez ce dépôt sur votre machine :
     ```bash
     git clone https://github.com/Pralexio/MangaVault.git
