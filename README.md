@@ -15,21 +15,7 @@ MangaVault a été conçu pour offrir aux amateurs d'animes et de mangas un outi
 
 ## Installation
 
-1. Clonez ce dépôt sur votre machine :
-    ```bash
-    git clone https://github.com/votre-utilisateur/mangavault.git
-    cd mangavault
-    ```
-
-2. Installez les dépendances :
-    ```bash
-    npm install
-    ```
-
-3. Lancez l'application :
-    ```bash
-    npm start
-    ```
+Un simple installeur je n'ai fait que pour Windows donc cela ne sera pas disponible pour Linux.
 
 ## Utilisation
 
