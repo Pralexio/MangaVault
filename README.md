@@ -1,6 +1,6 @@
 # MangaVault
 
-**MangaVault** est une application dédiée à l'archivage et au suivi de l'avancement des animes et des scans, développée avec [Electron](https://www.electronjs.org/). Cette application permet aux utilisateurs de créer, visualiser, modifier et supprimer des notes sur leurs animes et scans favoris, le tout en sauvegardant ces informations localement sur leur machine.
+**MangaVault** est une application dédiée à l'archivage et au suivi de l'avancement des animes et des scans, développée avec [Electron](https://www.electronjs.org/). Cette application permet aux utilisateurs de créer, visualiser, modifier et supprimer des notes sur leurs animes et scans favoris, ainsi que de poursuivre votre lecture ou vos épisodes !, le tout en sauvegardant ces informations localement sur leur machine.
 
 ## Fonctionnalités
 
