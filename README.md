@@ -9,6 +9,9 @@
 - **Édition des Notes** : Modifiez les informations des entrées existantes pour mettre à jour le numéro de l'épisode ou du chapitre, ou pour ajouter des notes supplémentaires.
 - **Suppression des Notes** : Supprimez les notes des animes ou scans que vous avez terminés ou que vous ne souhaitez plus suivre.
 - **Suivi grâce à Electron** : Permet de continuer vos scans/épisodes avec le navigateur Chrome grâce à Electron, avec l'ajout d'un adblocker utilisant les listes connues d'easylist.
+- **Pour l'url assuraient vous toujours d'avoir l'url complète ``duckduckgo.com`` ne suffira pas ! Il faut ``https://www.duckduckgo.com`` !**
+
+- ## Certains sites comme google.com peuvent être bloquer suite à la liste pour adblock "j'ai décidé d'utiliser Easylist ainsi que la liste d'UBlock" donc vous devrez utiliser par exemple duckduckgo.com, vous pouvez me dire si vous avez des listes plus complète si vous avez, je suis toujours preneur !
 
 ## Objectif
 
