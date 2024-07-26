@@ -35,7 +35,7 @@ Voici quelques captures d'écran de MangaVault :
 
 ## Installation
 
-**(Pour Windows, utilisez simplement l'installateur ; les commandes ci-dessous sont pour installer toutes les dépendances pour éditer ou utiliser les fichiers du projet directement)**
+**(Pour Windows, utilisez simplement l'installateur, les commandes ci-dessous sont pour installer toutes les dépendances pour éditer ou utiliser les fichiers du projet directement)**
 
 1. Clonez ce dépôt sur votre machine :
     ```bash
