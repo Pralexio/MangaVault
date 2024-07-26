@@ -86,4 +86,4 @@ Ce projet est sous la licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus 
 
 ---
 
-*Pour toute question ou support, veuillez ouvrir une issue sur [GitHub](https://github.com/votre-utilisateur/mangavault/issues).*
+*Pour toute question ou support, veuillez ouvrir une issue sur [GitHub](https://github.com/pralexio/mangavault/issues).*
