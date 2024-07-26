@@ -8,15 +8,31 @@
 - **Visualisation des Notes** : Consultez toutes vos notes facilement, grâce à une interface claire qui vous permet de suivre vos progrès.
 - **Édition des Notes** : Modifiez les informations des entrées existantes pour mettre à jour le numéro de l'épisode ou du chapitre, ou pour ajouter des notes supplémentaires.
 - **Suppression des Notes** : Supprimez les notes des animes ou scans que vous avez terminés ou que vous ne souhaitez plus suivre.
+- **Suivi grâce à Electron** : Permet de continuer vos scans/épisodes avec le navigateur Chrome grâce à Electron, avec l'ajout d'un adblocker utilisant les listes connues d'easylist.
 
-- **Suivi grâce a electron** permet de continuer vos scans / épisodes avec le navigateur chrome grâce a electron ainsi que l'ajout d'un adblocker avec les listes connue d'easylist.
 ## Objectif
 
 MangaVault a été conçu pour offrir aux amateurs d'animes et de mangas un outil simple et efficace pour suivre leur progression. Que vous soyez un fan occasionnel ou un consommateur assidu, cette application vous aide à garder une trace de ce que vous avez regardé ou lu et à planifier ce que vous voulez voir ou lire ensuite.
 
+## Aperçu de l'Application
+
+Voici quelques captures d'écran de MangaVault :
+
+![Capture d'écran 1](https://i.ibb.co/4SzQQBs/IMG-01.png)
+*Interface principale de MangaVault montrant les archives récentes et les notes.*
+
+![Capture d'écran 2](https://i.ibb.co/rsddfnB/IMG-02.png)
+*Vue détaillée d'une note.*
+
+![Capture d'écran 3](https://i.ibb.co/kg62fLz/IMG-03.png)
+*Exemple d'url présent dans la note qui peut être ouvert ! "incluant un adblock"*
+
+![Capture d'écran 4](https://i.ibb.co/N9dx2Jy/IMG-04.png)
+*Pop-up de création d'archives !*
+
 ## Installation
 
-**(Pour Windows juste besoins de l'installeur les commandes ci-dessous sont pour pouvoir installer toutes les dépendances pour éditer ou utiliser les fichiers du projet directement)**
+**(Pour Windows, utilisez simplement l'installateur ; les commandes ci-dessous sont pour installer toutes les dépendances pour éditer ou utiliser les fichiers du projet directement)**
 
 1. Clonez ce dépôt sur votre machine :
     ```bash
