@@ -80,10 +80,9 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à l'améli
     ```
 5. Créez une pull request depuis GitHub.
 
-## License
-
-Ce projet est sous la licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
-
 *Pour toute question ou support, veuillez ouvrir une issue sur [GitHub](https://github.com/pralexio/mangavault/issues).*
+
+## Licence
+
+Ce logiciel est soumis à des conditions d'utilisation. Consultez la licence complète ici :  
+📜 [MangaVault - License](https://github.com/Pralexio/Project-Licenses/blob/main/%F0%9F%93%9C%20MangaVault%20-%20LICENSE.md)
